@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee"
+xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-
+app_2_5.xsd" id="WebApp_ID" version="6.0">
+	<servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <jsp-file>/upload_video.jsp</jsp-file>
+        <multipart-config>
+            <max-file-size>10485760</max-file-size> <!-- 10MB -->
+            <max-request-size>52428800</max-request-size> <!-- 50MB -->
+            <file-size-threshold>1048576</file-size-threshold> <!-- 1MB -->
+        </multipart-config>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/upload_video.jsp</url-pattern>
+    </servlet-mapping>
+    
+   	<servlet>
+   		<servlet-name>BoardController</servlet-name>
+   		<servlet-class>mvc.controller.BoardController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BoardController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<!-- 
+ 	<security-role>
+ 		<description></description>
+ 		<role-name>admin</role-name>
+ 	</security-role>
+ 	 
+	<security-constraint>
+		<display-name>OLS Security</display-name>
+		<web-resource-collection>
+			<web-resource-name>OnlineLerningSystem</web-resource-name>
+			<description></description>
+			<url-pattern>/index.jsp</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<description>권한 관리자명</description>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/login.jsp</form-login-page>
+			<form-error-page>/login_failed.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+	-->
+	<filter>
+		<filter-name>LogFileFilter</filter-name>
+		<filter-class>filter.LogFileFilter</filter-class>
+		<init-param>
+			<param-name>filename</param-name>
+			<param-value>C:\\logs\\onlineLearningSystem.log</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>LogFileFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+</web-app>

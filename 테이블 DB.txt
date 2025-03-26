@@ -1,0 +1,42 @@
+<자유게시판 (Free Board)>
+
+CREATE TABLE FREE_BOARD (
+    BID NUMBER PRIMARY KEY,        -- 게시물 고유 ID
+    MID VARCHAR(20),               -- 작성자 회원 ID
+    TITLE VARCHAR(200),            -- 게시물 제목
+    CONTENT VARCHAR(1000),         -- 게시물 내용
+    POST_DATE TIMESTAMP,           -- 작성일
+    HIT NUMBER,                    -- 조회수
+    FOREIGN KEY (MID) REFERENCES Students(login_id)  -- 작성자 회원 ID를 참조하는 외래 키
+);
+
+
+<자료실 (Resource Board)>
+
+CREATE TABLE RESOURCE_BOARD (
+    RID NUMBER PRIMARY KEY,        -- 자료 고유 ID
+    MID VARCHAR(20),               -- 작성자 회원 ID
+    TITLE VARCHAR(200),            -- 자료 제목
+    DESCRIPTION VARCHAR(1000),     -- 자료 설명
+    POST_DATE TIMESTAMP,           -- 작성일
+    HIT NUMBER,                    -- 조회수
+    FILE_PATH VARCHAR(500),        -- 파일 경로
+    FILE_NAME VARCHAR(255),        -- 파일 이름
+    FILE_SIZE NUMBER,              -- 파일 크기
+    FOREIGN KEY (MID) REFERENCES MYMEMBER(ID)  -- 작성자 회원 ID를 참조하는 외래 키
+);
+
+
+<QnA 게시판 (QnA Board)> -> x
+
+CREATE TABLE QNA_BOARD (
+    QID NUMBER PRIMARY KEY,        -- 질문 고유 ID
+    MID VARCHAR(20),               -- 질문자 회원 ID
+    TITLE VARCHAR(200),            -- 질문 제목
+    QUESTION_CONTENT VARCHAR(1000),-- 질문 내용
+    ANSWER_CONTENT VARCHAR(1000),  -- 답변 내용
+    QUESTION_DATE TIMESTAMP,       -- 질문 작성일
+    ANSWER_DATE TIMESTAMP,         -- 답변 작성일
+    HIT NUMBER,                    -- 조회수
+    FOREIGN KEY (MID) REFERENCES MYMEMBER(ID)  -- 질문자 회원 ID를 참조하는 외래 키
+);
