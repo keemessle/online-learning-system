@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; }
+
+html { height: 100%; }
+		
+body {
+	height: 100%;
+	padding: 30px 0;
+ 	background-color: #ddd;
+}
+		
+.container {
+	min-height: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	background-color: whitesmoke;
+/* 	font-family: 'Pretendard-Regular'; */
+}
+
+
+/* 게시판 */
+.board-content {
+	flex: 1;
+	display: flex;
+    flex-direction: column;
+}
+
+.board-header {
+	border-bottom: 1.5px solid #ddd;
+}
+
+.board-title {
+	font-family: 'TheJamsil5Bold';
+	font-size: 30px;
+    padding: 1em;
+}
+
+.board-description {
+	font-size: 15px;
+	color: #aaa;
+}
+
+
+.board-table {
+	font-size: 14px;
+	flex: 1;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: transparent; 
+}
+
+.board-table td {
+	font-size: 14px;
+	text-align: center;
+  	vertical-align: middle;
+ 	border: 1px solid #e0e0e0;
+}
+
+
+.board-page {
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+}
+
+.board-write-btn {
+	text-align: right;
+	padding: 1em;
+}
+
+.btn-primary {
+	font-size: 14px;
+}
+
+.board-search {
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search-btn {
+	font-size: 14px;
+	border: 1px solid #bbb;
+}
+
+.search-btn:hover {
+	border: 1px solid #000;
+}
+
+
+
+/* 상세보기, 수 */
+.card {
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+	padding: 1.5em;
+}
+
+.card-body {
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.board-content-title {
+	font-family: 'TheJamsil5Bold';
+}
+
+.board-content-date {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 14px;
+	padding: 5px 20px;
+	border-bottom: 1px solid #aaa;
+	
+}
+
+.board-content-text {
+	width: 100%;
+	padding: 1em;
+	white-space: pre-wrap;
+	font-size: 16px;
+	line-height: 1.8;
+	color: #333;
+}
+
+.back-btn,
+.modify-btn,
+.delete-btn {
+	border: 2px outset #bbb;
+}
+
+.back-btn:hover {
+	border: 2px outset #000;
+}
+
+.modify-btn:hover {
+	border: 2px outset green;
+}
+
+.delete-btn:hover {
+	border: 2px outset red;
+}
+
+
+
+
+/* 게시글 작성 */
+.write-btn,
+.cancel-btn {
+	padding: 5px 15px;
+	text-align: center;
+	border: 2px outset #bbb;
+}
+
+
+.write-btn:hover {
+	border: 2px outset blue;
+}
+
+.cancel-btn:hover {
+	border: 2px outset red;
+}

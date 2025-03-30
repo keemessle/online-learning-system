@@ -1,0 +1,181 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; }
+
+html { height: 100%; }
+		
+body {
+	height: 100%;
+	padding: 30px 0;
+ 	background-color: #ddd;
+}
+		
+.container {
+	min-height: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	background-color: whitesmoke;
+}
+
+
+.subject-content {
+	flex: 1;
+	display: flex;
+    flex-direction: column;
+}
+
+.subject-header {
+	border-bottom: 1.5px solid #ddd;
+}
+
+.subject-title {
+	font-family: 'TheJamsil5Bold';
+	font-size: 30px;
+    padding: 1em;
+}
+
+
+
+
+/* 강의 보기, 강의 관리 */
+.subject-table {
+	font-size: 14px;
+	flex: 1;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: transparent; 
+}
+
+.subject-table td {
+	font-size: 14px;
+ 	text-align: center;
+  	vertical-align: middle;
+ 	border: 1px solid #e0e0e0;
+}
+
+.video-tr {
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.upload-form {
+	padding: 1em;
+	font-size: 14px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.upload-btn {
+	font-size: 14px;
+	margin-left: 3px;
+	border: 2px outset #bbb;
+}
+
+.upload-btn:hover {
+	border: 2px outset blue;
+}
+
+
+.delete-btn {	
+	font-size: 14px;
+	border: 2px outset #bbb;
+}
+
+.delete-btn:hover {
+	border: 2px outset red;
+}
+
+.back-btn {
+	font-size: 14px;
+}
+
+
+
+/* 과목 관리 */
+.subject-request-decscription {
+	font-size: 14px;
+	color: #aaa;
+}
+
+
+.subject-form {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.input-form {
+	width: 300px;
+	text-align: center;
+}
+
+.plus-btn {
+	font-size: 14px;
+	border: 2px outset #bbb;
+	margin-top: 1em;
+}
+
+.plus-btn:hover {
+	border: 2px outset blue;
+}
+
+.subject-label {
+	width: 100%;
+}
+
+.subject-select {
+	width: 300px;
+	margin-top: 10px;
+	padding: 10px 0;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.select-btn {
+	width: 300px;
+	font-size: 14px;
+	padding: 10px 0;
+	border: 1px solid #aaa;
+}
+
+.select-btn:hover {
+	border: 1px solid #000;
+}
+
+/* 반응형 대응 */
+@media (max-width: 768px) {
+    .subject-title {
+        font-size: 28px;
+    }
+
+    .subject-select {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}

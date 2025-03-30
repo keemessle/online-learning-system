@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; }
+
+html { height: 100%; }
+		
+body {
+	height: 100%;
+	padding: 30px 0;
+ 	background-color: #ddd;
+}
+		
+.container {
+	min-height: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	background-color: whitesmoke;
+/* 	font-family: 'Pretendard-Regular'; */
+}
+
+
+
+.info-form {
+	flex: 1;
+	display: flex;
+    flex-direction: column;
+}
+
+.info-header {
+	border-bottom: 1.5px solid #ddd;
+}
+
+
+.info-title {
+	font-family: 'TheJamsil5Bold';
+	font-size: 30px;
+    padding: 1em;
+}
+
+.clear-form {
+	text-align: right;
+	padding: 5px;
+}
+
+.clear-btn {
+	font-size: 13px;
+	border: 2px outset #bbb;
+}
+
+.clear-btn:hover {
+	font-size: 13px;
+	border: 2px outset red;
+}
+
+
+.update-content {
+	display: flex;
+    justify-content: center;
+/*     margin: 0 20px; */
+}
+
+.update-form {
+	width: 100%;
+    max-width: 600px;
+}
+
+/* label 정렬 */
+.update-form .form-label {
+    font-weight: 500;
+    text-align: right;
+}
+
+.form-actions {
+	text-align: right;
+	padding-right: 50px;
+}
+
+.confirm-btn {
+	font-size: 14px;
+	border: 2px outset #bbb;
+}
+
+.confirm-btn:hover {
+	border: 2px outset blue;
+}
+
+

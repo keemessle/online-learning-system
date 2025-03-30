@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+.custom-navbar {
+	flex-shrink: 0;
+ 	padding: 10px 20px;
+ 	background-color: whitesmoke;
+}
+		
+.logo-text {
+	font-size: 35px;
+	font-family: 'LOTTERIACHAB';
+	padding-right: 30px;
+}
+
+.nav-menu {
+/* 	margin: 0 30px; */
+	font-size: 15px;
+	color: gray !important;
+}
+		
+.navbar-nav {
+	width: 70%;
+}
+
+.nav-menu:hover {
+	color: #000 !important;
+}
+		
+.user-info {
+	font-size: 16px;
+	font-family: 'TheJamsil5Bold';
+	white-space: nowrap;
+	color: black;
+}
+
+.logout-btn {
+	margin-left: 10px;
+	font-size: 14px;
+}

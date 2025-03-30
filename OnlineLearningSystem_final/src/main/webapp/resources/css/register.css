@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+ 	display: flex;
+	align-items: center;
+	justify-content: center;
+ 	height: 100vh;
+ 	background-color: #ddd;
+}
+
+.container {
+	width: 100%;
+	max-width: 600px;
+	margin: 80px auto;
+	padding: 50px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	background-color: whitesmoke;
+}
+
+/* 회원가입 */
+
+.input-form {
+	width: 100%;
+	padding: 0 20em;
+}
+
+.text-end {
+	font-size: 13px;
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+.register-form {
+	margin-bottom: 15px;
+}
+
+.form-control {
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 14px;
+}
+
+.radio-box-form {
+	text-align: left;
+	padding: 10px 0;
+	margin: 0;
+}
+
+.btn-box-form {
+	display: flex;
+	justify-content: flex-end;
+	/* text-align: right; */
+}
+
+.btn-confirm, .btn-cancel {
+	width: 90px;
+	padding: 1em;
+	margin-left: 10px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #000;
+	background-color: #EFEFEF;
+	text-decoration: none;
+}
+
+.btn-confirm:hover, .btn-cancel:hover {
+	border: 1px solid mediumblue;
+}

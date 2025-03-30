@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; }
+
+html { height: 100%; }
+		
+body {
+	height: 100%;
+	padding: 30px 0;
+ 	background-color: #ddd;
+}
+		
+.container {
+	min-height: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	background-color: whitesmoke;
+}
+
+.attendance-header {
+	border-bottom: 1.5px solid #ddd;
+}
+
+.attendance-title {
+	font-family: 'TheJamsil5Bold';
+	font-size: 30px;
+    padding: 1em;
+}
+
+.attendance-select-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	border-bottom: 1.5px solid #ddd;
+}
+
+.attendance-content {
+	flex: 1;
+	display: flex;
+    flex-direction: column;
+}
+
+.confirm-btn {
+	border: 1px solid #aaa;
+}
+
+.confirm-btn:hover {
+	border: 1px solid #000;
+}
+
+.attendance-table {
+	font-size: 14px;
+	flex: 1;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: transparent; 
+}
+
+.attendance-table td {
+ 	text-align: center;
+  	vertical-align: middle;
+ 	border: 1px solid #e0e0e0;
+}
+
+.back-btn {
+	font-size: 14px;
+}
+
+

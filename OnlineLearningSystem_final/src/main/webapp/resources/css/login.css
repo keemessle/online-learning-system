@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+ 	display: flex;
+	align-items: center;
+	justify-content: center;
+ 	height: 100vh;
+ 	background-color: #ddd;
+}
+
+.container {
+	width: 100%;
+	max-width: 600px;
+	margin: 80px auto;
+	padding: 50px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	background-color: whitesmoke;
+}
+
+/* 로그인 */
+
+.form-box {
+	width: 100%;	
+	height: auto;
+}
+
+.form-title {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+		
+.form-signin {
+	text-align: center;
+	padding: 1em;
+}
+		
+.form-input {
+	font-size: 14px;
+	text-align: center;
+}
+
+.btn-box {
+	width: 100%;
+}
+
+.btn-signin {
+	width: 100%;
+	padding: 1em;
+	font-size: 14px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+}
+
+.btn-signup {
+	display: inline-block;
+	width: 100%;
+	padding: 1em;
+	font-size: 14px;
+	text-decoration: none;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	background-color: #EFEFEF;
+	color: #000;
+}
+
+		
+.btn-signin:hover, .btn-signup:hover {
+	border: 1px solid mediumblue;
+}
+
+.error-message {
+	color: crimson;
+  	margin-top: 10px;
+  	font-size: 14px;
+}
